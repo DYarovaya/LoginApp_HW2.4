@@ -9,10 +9,17 @@ import UIKit
 
 class UserInfoViewController: UIViewController {
 
+    @IBOutlet weak var logOutButton: UIButton!
+    @IBOutlet weak var guesFavoriteColorButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        ButtonUtils.setupButton(button: logOutButton, title: "Log Out")
+        ButtonUtils.setupButton(button: guesFavoriteColorButton, title: "Try")
     }
 
 
+    @IBAction func logOutPressed() {
+        dismiss(animated: true)
+    }
 }
