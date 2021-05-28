@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  UserInfoViewController.swift
 //  LoginApp_HW2.4
 //
 //  Created by Дарья Яровая on 28.05.2021.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class UserInfoViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,4 +16,3 @@ class ViewController: UIViewController {
 
 
 }
-

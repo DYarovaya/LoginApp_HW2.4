@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		4B1C1DB12661299B0069B6BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1C1DB02661299B0069B6BD /* AppDelegate.swift */; };
 		4B1C1DB32661299B0069B6BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1C1DB22661299B0069B6BD /* SceneDelegate.swift */; };
-		4B1C1DB52661299B0069B6BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1C1DB42661299B0069B6BD /* ViewController.swift */; };
+		4B1C1DB52661299B0069B6BD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1C1DB42661299B0069B6BD /* LoginViewController.swift */; };
 		4B1C1DB82661299B0069B6BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B1C1DB62661299B0069B6BD /* Main.storyboard */; };
 		4B1C1DBA2661299D0069B6BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B1C1DB92661299D0069B6BD /* Assets.xcassets */; };
 		4B1C1DBD2661299D0069B6BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B1C1DBB2661299D0069B6BD /* LaunchScreen.storyboard */; };
+		4B1C1DC9266131B20069B6BD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1C1DC8266131B20069B6BD /* HomeViewController.swift */; };
+		4B1C1DCB266132010069B6BD /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1C1DCA266132010069B6BD /* UserInfoViewController.swift */; };
+		4B1C1DCD26613DD90069B6BD /* FavoriteColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1C1DCC26613DD80069B6BD /* FavoriteColorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4B1C1DAD2661299B0069B6BD /* LoginApp_HW2.4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginApp_HW2.4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B1C1DB02661299B0069B6BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4B1C1DB22661299B0069B6BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4B1C1DB42661299B0069B6BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4B1C1DB42661299B0069B6BD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4B1C1DB72661299B0069B6BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4B1C1DB92661299D0069B6BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B1C1DBC2661299D0069B6BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B1C1DBE2661299D0069B6BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B1C1DC8266131B20069B6BD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		4B1C1DCA266132010069B6BD /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
+		4B1C1DCC26613DD80069B6BD /* FavoriteColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteColorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,50 @@
 		4B1C1DAF2661299B0069B6BD /* LoginApp_HW2.4 */ = {
 			isa = PBXGroup;
 			children = (
+				4B1C1DC726612A110069B6BD /* Models */,
+				4B1C1DC5266129E50069B6BD /* Views */,
+				4B1C1DC6266129F10069B6BD /* Controllers */,
+				4B1C1DC4266129DA0069B6BD /* Resource */,
 				4B1C1DB02661299B0069B6BD /* AppDelegate.swift */,
 				4B1C1DB22661299B0069B6BD /* SceneDelegate.swift */,
-				4B1C1DB42661299B0069B6BD /* ViewController.swift */,
-				4B1C1DB62661299B0069B6BD /* Main.storyboard */,
-				4B1C1DB92661299D0069B6BD /* Assets.xcassets */,
 				4B1C1DBB2661299D0069B6BD /* LaunchScreen.storyboard */,
 				4B1C1DBE2661299D0069B6BD /* Info.plist */,
 			);
 			path = LoginApp_HW2.4;
+			sourceTree = "<group>";
+		};
+		4B1C1DC4266129DA0069B6BD /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				4B1C1DB92661299D0069B6BD /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		4B1C1DC5266129E50069B6BD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4B1C1DB62661299B0069B6BD /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4B1C1DC6266129F10069B6BD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4B1C1DB42661299B0069B6BD /* LoginViewController.swift */,
+				4B1C1DC8266131B20069B6BD /* HomeViewController.swift */,
+				4B1C1DCA266132010069B6BD /* UserInfoViewController.swift */,
+				4B1C1DCC26613DD80069B6BD /* FavoriteColorViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4B1C1DC726612A110069B6BD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +178,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B1C1DB52661299B0069B6BD /* ViewController.swift in Sources */,
+				4B1C1DB52661299B0069B6BD /* LoginViewController.swift in Sources */,
 				4B1C1DB12661299B0069B6BD /* AppDelegate.swift in Sources */,
+				4B1C1DCB266132010069B6BD /* UserInfoViewController.swift in Sources */,
 				4B1C1DB32661299B0069B6BD /* SceneDelegate.swift in Sources */,
+				4B1C1DCD26613DD90069B6BD /* FavoriteColorViewController.swift in Sources */,
+				4B1C1DC9266131B20069B6BD /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +333,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3ZSTN83ADW;
 				INFOPLIST_FILE = LoginApp_HW2.4/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,6 +353,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3ZSTN83ADW;
 				INFOPLIST_FILE = LoginApp_HW2.4/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
