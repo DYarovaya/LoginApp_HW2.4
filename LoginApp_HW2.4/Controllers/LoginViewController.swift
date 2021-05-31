@@ -17,12 +17,11 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var forgotPasswordButton: UIButton!
     @IBOutlet weak var loginButton: UIButton!
     
-    private let user = "User"
-    private let password = "Password"
+    private let user = UserData.getUserData()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
         userNameTextField.delegate = self
         passwordTextField.delegate = self
         
@@ -41,7 +40,7 @@ class LoginViewController: UIViewController {
         
     }
     @IBAction func logInButtonPressed() {
-        if userNameTextField.text != user || passwordTextField.text != password {
+        if userNameTextField.text != user.login || passwordTextField.text != user.password {
             showAlert(title: "Invalid login or password", message: "Please, enter correct login and password")
             passwordTextField.text = ""
             return
@@ -52,10 +51,14 @@ class LoginViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        print("segue.destination is \(segue.destination)")
-        guard let welcomeScreenVC = segue.destination as? HomeViewController else { return }
-        welcomeScreenVC.userName = user
-        print("der56f57g8h9")
+        let tabBarController = segue.destination as! UITabBarController
+        for vievController in tabBarController.viewControllers! {
+            if let homeVC = vievController as? HomeViewController {
+                homeVC.user = user
+            } else if let userInfoVC = vievController as? UserInfoViewController {
+                userInfoVC.user = user
+            }
+        }
     }
         
         //настройка алерта

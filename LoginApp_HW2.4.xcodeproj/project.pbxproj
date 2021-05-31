@@ -17,6 +17,7 @@
 		4B1C1DCB266132010069B6BD /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1C1DCA266132010069B6BD /* UserInfoViewController.swift */; };
 		4B1C1DCD26613DD90069B6BD /* FavoriteColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1C1DCC26613DD80069B6BD /* FavoriteColorViewController.swift */; };
 		4B1C1DCF266143FC0069B6BD /* ButtonUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1C1DCE266143FC0069B6BD /* ButtonUtils.swift */; };
+		4BB810FF2664DF8E00D542E2 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB810FE2664DF8E00D542E2 /* UserData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		4B1C1DCA266132010069B6BD /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
 		4B1C1DCC26613DD80069B6BD /* FavoriteColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteColorViewController.swift; sourceTree = "<group>"; };
 		4B1C1DCE266143FC0069B6BD /* ButtonUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonUtils.swift; sourceTree = "<group>"; };
+		4BB810FE2664DF8E00D542E2 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,8 +72,8 @@
 				4B1C1DC4266129DA0069B6BD /* Resource */,
 				4B1C1DB02661299B0069B6BD /* AppDelegate.swift */,
 				4B1C1DB22661299B0069B6BD /* SceneDelegate.swift */,
-				4B1C1DBB2661299D0069B6BD /* LaunchScreen.storyboard */,
 				4B1C1DBE2661299D0069B6BD /* Info.plist */,
+				4B1C1DBB2661299D0069B6BD /* LaunchScreen.storyboard */,
 			);
 			path = LoginApp_HW2.4;
 			sourceTree = "<group>";
@@ -107,6 +109,7 @@
 		4B1C1DC726612A110069B6BD /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				4BB810FE2664DF8E00D542E2 /* UserData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 			files = (
 				4B1C1DB52661299B0069B6BD /* LoginViewController.swift in Sources */,
 				4B1C1DB12661299B0069B6BD /* AppDelegate.swift in Sources */,
+				4BB810FF2664DF8E00D542E2 /* UserData.swift in Sources */,
 				4B1C1DCB266132010069B6BD /* UserInfoViewController.swift in Sources */,
 				4B1C1DB32661299B0069B6BD /* SceneDelegate.swift in Sources */,
 				4B1C1DCD26613DD90069B6BD /* FavoriteColorViewController.swift in Sources */,

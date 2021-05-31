@@ -165,7 +165,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="About" image="person.fill" catalog="system" id="lTb-UF-XbE"/>
                     <connections>
-                        <outlet property="guesFavoriteColorButton" destination="jOp-P1-vrS" id="qjr-az-iCR"/>
+                        <outlet property="guessFavoriteColorButton" destination="jOp-P1-vrS" id="qjr-az-iCR"/>
                         <outlet property="logOutButton" destination="BhN-qH-Okl" id="7Ld-du-cXF"/>
                     </connections>
                 </viewController>

@@ -17,6 +17,8 @@ class FavoriteColorViewController: UIViewController {
     
     @IBOutlet weak var resultLabel: UILabel!
     
+    var user: UserData!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         ButtonUtils.setupButton(button: blueButton, title: "Blue")
@@ -30,7 +32,7 @@ class FavoriteColorViewController: UIViewController {
     }
 
     @IBAction func colorButtonPressed(_ sender: UIButton) {
-        if sender == emeralButton {
+        if sender.currentTitle == user.favoriteColor {
             showAlert(title: "👍", message: "You are right!")
         }  else {
             showAlert(title: "👇", message: "You need to choose another color")
